@@ -1,4 +1,4 @@
-module github.com/open-cluster-management/hub-of-hubs-data-types/apis/config/v1
+module github.com/open-cluster-management/hub-of-hubs-data-types/apis/config
 
 go 1.16
 
