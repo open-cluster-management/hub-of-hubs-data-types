@@ -1,12 +1,8 @@
 package datatypes
 
 const (
-	// SpecBundle - spec bundle message type.
-	SpecBundle = "SpecBundle"
 	// StatusBundle - status bundle message type.
 	StatusBundle = "StatusBundle"
-	// PlacementRuleBundle - Placement Rule bundle message type.
-	PlacementRuleBundle = "PlacementRuleBundle"
 	// Config - hub of hubs config message type.
 	Config = "Config"
 
