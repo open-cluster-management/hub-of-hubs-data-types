@@ -16,6 +16,9 @@ const (
 
 	// Minimal is an AggregationLevel
 	Minimal AggregationLevel = "minimal"
+
+	// ShowLocalPolicies decides if to propagate local policies
+	ShowLocalPolicies bool = true
 )
 
 // ConfigSpec defines the desired state of Config
