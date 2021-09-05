@@ -18,6 +18,6 @@ const (
 	PolicyDeltaComplianceMsgKey = "PolicyDeltaCompliance"
 	// MinimalPolicyComplianceMsgKey - minimal policy compliance message key.
 	MinimalPolicyComplianceMsgKey = "MinimalPolicyCompliance"
-	// HeartbeatKey - heartbeat message key.
-	HeartbeatKey = "Heartbeat"
+	// ControlDataKey - control data message key.
+	ControlDataKey = "ControlData"
 )
