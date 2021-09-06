@@ -20,4 +20,9 @@ const (
 	MinimalPolicyComplianceMsgKey = "MinimalPolicyCompliance"
 	// ControlDataKey - control data message key.
 	ControlDataKey = "ControlData"
+
+	// TODO to be deleted after merging kafka changes, for backward compatibility until other repos adapt new types
+
+	// PolicyComplianceMsgKey - policy compliance message key.
+	PolicyComplianceMsgKey = "PolicyCompliance"
 )
