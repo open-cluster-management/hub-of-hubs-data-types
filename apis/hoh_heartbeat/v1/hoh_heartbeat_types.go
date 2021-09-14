@@ -12,7 +12,7 @@ type HohHeartbeatSpec struct{}
 
 // HohHeartbeatStatus defines the observed state of HohHeartbeat
 type HohHeartbeatStatus struct {
-	LastTimestamp metav1.Timestamp `json:"lastTimestamp,omitempty"`
+	LastTimestamp int64 `json:"lastTimestamp,omitempty"`
 }
 
 //+kubebuilder:object:root=true
@@ -23,7 +23,7 @@ type HohHeartbeat struct {
 	metav1.TypeMeta   `json:",inline"`
 	metav1.ObjectMeta `json:"metadata,omitempty"`
 
-	Spec   HohHeartbeatSpec    `json:"spec,omitempty"`
+	Spec   HohHeartbeatSpec   `json:"spec,omitempty"`
 	Status HohHeartbeatStatus `json:"status,omitempty"`
 }
 
