@@ -10,4 +10,4 @@ The data-types module of [Hub-of-Hubs](https://github.com/open-cluster-managemen
 ## DeepCopy and CRD generation
 
 1. DeepCopy - run ```make generate```. The file will be generated in the corresponding API folder
-2. CRD - run ```make manifests```. The YAML files will be created under <root>/crd folder
+2. CRD - run ```make manifests```. The YAML files will be created under <root>/crd folder. The YAML files must be copied then to: https://github.com/open-cluster-management/hub-of-hubs-crds/tree/main/crds and CR example must be updated at: https://github.com/open-cluster-management/hub-of-hubs-crds/tree/main/cr-examples
