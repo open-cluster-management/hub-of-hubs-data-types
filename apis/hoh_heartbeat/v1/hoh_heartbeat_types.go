@@ -7,9 +7,6 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 )
 
-// HohHeartbeatSpec defines the desired state of HohHeartbeat
-type HohHeartbeatSpec struct{}
-
 // HohHeartbeatStatus defines the observed state of HohHeartbeat
 type HohHeartbeatStatus struct {
 	// LastTimestamp contains last timestamp a heartbeat was received from HoH.
@@ -27,7 +24,6 @@ type HohHeartbeat struct {
 	metav1.TypeMeta   `json:",inline"`
 	metav1.ObjectMeta `json:"metadata,omitempty"`
 
-	Spec   HohHeartbeatSpec   `json:"spec,omitempty"`
 	Status HohHeartbeatStatus `json:"status,omitempty"`
 }
 
