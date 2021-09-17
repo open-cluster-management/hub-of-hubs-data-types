@@ -12,7 +12,11 @@ type HohHeartbeatSpec struct{}
 
 // HohHeartbeatStatus defines the observed state of HohHeartbeat
 type HohHeartbeatStatus struct {
+	// LastTimestamp contains last timestamp a heartbeat was received from HoH.
+	// Format: number of seconds elapsed since January 1, 1970 UTC.
 	LastTimestamp int64 `json:"lastTimestamp,omitempty"`
+	// Conditions contains the different condition statuses for this HoH heartbeat.
+	Conditions []metav1.Condition `json:"conditions"`
 }
 
 //+kubebuilder:object:root=true
