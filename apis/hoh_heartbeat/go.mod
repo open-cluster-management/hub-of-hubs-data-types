@@ -1,4 +1,4 @@
-module github.com/open-cluster-management/hub-of-hubs-data-types/apis/config
+module github.com/open-cluster-management/hub-of-hubs-data-types/apis/hoh-heartbeat
 
 go 1.16
 
