@@ -33,7 +33,6 @@ type BaseDeltaComplianceStatusBundle struct {
 	Generation           uint64                         `json:"generation"`
 }
 
-
 // TODO to be deleted after merging kafka changes, for backward compatibility until other repos adapt new types
 
 // PolicyComplianceStatus struct holds information for policy compliance status.
