@@ -22,16 +22,15 @@ type BaseCompleteComplianceStatusBundle struct {
 	Objects              []*PolicyCompleteComplianceStatus `json:"objects"`
 	LeafHubName          string                            `json:"leafHubName"`
 	BaseBundleGeneration uint64                            `json:"baseBundleGeneration"`
-	Generation           uint64                            `json:"generation"`
+	Generation           string                            `json:"generation"`
 }
 
 // BaseDeltaComplianceStatusBundle is the base struct for delta state compliance status bundle.
 type BaseDeltaComplianceStatusBundle struct {
-	Objects                               []*PolicyDeltaComplianceStatus `json:"objects"`
-	LeafHubName                           string                         `json:"leafHubName"`
-	ClustersPerPolicyBaseBundleGeneration uint64                         `json:"clustersPerPolicyBaseBundleGeneration"`
-	ComplianceBaseBundleGeneration        uint64                         `json:"complianceBaseBundleGeneration"`
-	Generation                            uint64                         `json:"generation"`
+	Objects              []*PolicyDeltaComplianceStatus `json:"objects"`
+	LeafHubName          string                         `json:"leafHubName"`
+	BaseBundleGeneration uint64                         `json:"baseBundleGeneration"`
+	Generation           string                         `json:"generation"`
 }
 
 // TODO to be deleted after merging kafka changes, for backward compatibility until other repos adapt new types

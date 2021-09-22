@@ -14,5 +14,5 @@ type ClustersPerPolicy struct {
 type BaseClustersPerPolicyBundle struct {
 	Objects     []*ClustersPerPolicy `json:"objects"`
 	LeafHubName string               `json:"leafHubName"`
-	Generation  uint64               `json:"generation"`
+	Generation  string               `json:"generation"`
 }

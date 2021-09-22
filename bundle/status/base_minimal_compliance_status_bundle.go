@@ -14,5 +14,5 @@ type MinimalPolicyComplianceStatus struct {
 type BaseMinimalComplianceStatusBundle struct {
 	Objects     []*MinimalPolicyComplianceStatus `json:"objects"`
 	LeafHubName string                           `json:"leafHubName"`
-	Generation  uint64                           `json:"generation"`
+	Generation  string                           `json:"generation"`
 }
