@@ -18,4 +18,13 @@ const (
 	PolicyDeltaComplianceMsgKey = "PolicyDeltaCompliance"
 	// MinimalPolicyComplianceMsgKey - minimal policy compliance message key.
 	MinimalPolicyComplianceMsgKey = "MinimalPolicyCompliance"
+	// ControlInfoMsgKey - control info message key.
+	ControlInfoMsgKey = "ControlInfo"
+	// HohHeartbeatMsgKey - HoH heartbeat message key.
+	HohHeartbeatMsgKey = "HohHeartbeat"
+
+	// TODO to be deleted after merging kafka changes, for backward compatibility until other repos adapt new types
+
+	// PolicyComplianceMsgKey - policy compliance message key.
+	PolicyComplianceMsgKey = "PolicyCompliance"
 )
