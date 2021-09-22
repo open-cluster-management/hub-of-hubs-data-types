@@ -21,7 +21,7 @@ type PolicyDeltaComplianceStatus struct {
 type BaseCompleteComplianceStatusBundle struct {
 	Objects              []*PolicyCompleteComplianceStatus `json:"objects"`
 	LeafHubName          string                            `json:"leafHubName"`
-	BaseBundleGeneration uint64                            `json:"baseBundleGeneration"`
+	BaseBundleGeneration string                            `json:"baseBundleGeneration"`
 	Generation           string                            `json:"generation"`
 }
 
@@ -29,6 +29,6 @@ type BaseCompleteComplianceStatusBundle struct {
 type BaseDeltaComplianceStatusBundle struct {
 	Objects              []*PolicyDeltaComplianceStatus `json:"objects"`
 	LeafHubName          string                         `json:"leafHubName"`
-	BaseBundleGeneration uint64                         `json:"baseBundleGeneration"`
+	BaseBundleGeneration string                         `json:"baseBundleGeneration"`
 	Generation           string                         `json:"generation"`
 }
