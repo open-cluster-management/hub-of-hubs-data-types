@@ -22,8 +22,7 @@ type BaseCompleteComplianceStatusBundle struct {
 	Objects              []*PolicyCompleteComplianceStatus `json:"objects"`
 	LeafHubName          string                            `json:"leafHubName"`
 	BaseBundleGeneration uint64                            `json:"baseBundleGeneration"`
-	Incarnation          uint64                            `json:"incarnation"`
-	Generation           uint64                            `json:"generation"`
+	BundleVersion
 }
 
 // BaseDeltaComplianceStatusBundle is the base struct for delta state compliance status bundle.
@@ -31,6 +30,5 @@ type BaseDeltaComplianceStatusBundle struct {
 	Objects              []*PolicyDeltaComplianceStatus `json:"objects"`
 	LeafHubName          string                         `json:"leafHubName"`
 	BaseBundleGeneration uint64                         `json:"baseBundleGeneration"`
-	Incarnation          uint64                         `json:"incarnation"`
-	Generation           uint64                         `json:"generation"`
+	BundleVersion
 }
