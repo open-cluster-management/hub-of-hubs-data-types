@@ -17,7 +17,13 @@ type BundleVersion struct {
 }
 
 // NewerThan returns whether the caller's version is newer than that received as argument.
+//
+// If other = nil the result is true.
 func (bv *BundleVersion) NewerThan(other *BundleVersion) bool {
+	if other == nil {
+		return true
+	}
+
 	if bv.Incarnation == other.Incarnation {
 		return bv.Generation > other.Generation
 	}
