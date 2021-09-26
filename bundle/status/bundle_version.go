@@ -25,7 +25,7 @@ func (bv *BundleVersion) NewerThan(other *BundleVersion) bool {
 	return bv.Incarnation > other.Incarnation
 }
 
-// Equal returns whether the caller's version is equal to that received as argument.
-func (bv *BundleVersion) Equal(other *BundleVersion) bool {
+// Equals returns whether the caller's version is equal to that received as argument.
+func (bv *BundleVersion) Equals(other *BundleVersion) bool {
 	return bv.Incarnation == other.Incarnation && bv.Generation == other.Generation
 }
