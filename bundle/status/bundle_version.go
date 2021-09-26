@@ -1,5 +1,13 @@
 package status
 
+// NewBundleVersion returns a new instance of BundleVersion.
+func NewBundleVersion(incarnation, generation uint64) *BundleVersion {
+	return &BundleVersion{
+		Incarnation: incarnation,
+		Generation:  generation,
+	}
+}
+
 // BundleVersion holds the information necessary for the consumers of status bundles to compare versions correctly.
 // Incarnation is the instance-version of the sender component, a counter that increments on restarts of the latter.
 // Generation is the bundle-version relative to the sender's instance, increments on bundle updates.
@@ -15,4 +23,9 @@ func (bv *BundleVersion) NewerThan(other *BundleVersion) bool {
 	}
 
 	return bv.Incarnation > other.Incarnation
+}
+
+// Equal returns whether the caller's version is equal to that received as argument.
+func (bv *BundleVersion) Equal(other *BundleVersion) bool {
+	return bv.Incarnation == other.Incarnation && bv.Generation == other.Generation
 }
