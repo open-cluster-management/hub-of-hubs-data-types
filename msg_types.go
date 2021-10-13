@@ -23,6 +23,9 @@ const (
 	// HohHeartbeatMsgKey - HoH heartbeat message key.
 	HohHeartbeatMsgKey = "HohHeartbeat"
 
+	// SecretMsgKey - Secret message key.
+	SecretMsgKey = "Secret"
+
 	// TODO to be deleted after merging kafka changes, for backward compatibility until other repos adapt new types
 
 	// PolicyComplianceMsgKey - policy compliance message key.
