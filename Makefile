@@ -37,6 +37,7 @@ CONTROLLER_GEN = $(shell pwd)/bin/controller-gen
 CRD_OPTIONS ?= "crd:trivialVersions=true,preserveUnknownFields=false"
 
 controller-gen: ## Download controller-gen locally if necessary.
+	$(shell mkdir -p bin)
 	$(call go-get-tool,$(CONTROLLER_GEN),sigs.k8s.io/controller-tools/cmd/controller-gen@v0.6.1)
 
 ## The controller-gen tool doesn't generate doop copy and crd files for apis with own go.mod file, i.e. /apis/config/go.mod
