@@ -33,13 +33,13 @@ lint: clean-vendor
 help:
 	@echo "usage: make [target]\n"; echo "options:"; \fgrep -h "##" $(MAKEFILE_LIST) | fgrep -v fgrep | sed -e 's/\\$$//' | sed -e 's/##//' | sed 's/.PHONY:*//' | sed -e 's/^/  /'; echo "";
 
-CONTROLLER_GEN = $(shell pwd)/bin/controller-gen
+CONTROLLER_GEN = controller-gen
 CRD_OPTIONS ?= "crd:trivialVersions=true,preserveUnknownFields=false"
 
 controller-gen: ## Download controller-gen locally if necessary.
-	$(call go-get-tool,$(CONTROLLER_GEN),sigs.k8s.io/controller-tools/cmd/controller-gen@v0.6.1)
+	go install sigs.k8s.io/controller-tools/cmd/controller-gen@v0.6.1
 
-## The controller-gen tool doesn't generate doop copy and crd files for apis with own go.mod file, i.e. /apis/config/go.mod
+## The controller-gen tool doesn't generate deep copy and crd files for apis with own go.mod file, i.e. /apis/config/go.mod
 ## The workaround is:
 ##   1. move module's go.mod file to a temporary file
 ##   2  copy main go.mod file to a temporary file to preserve changes
