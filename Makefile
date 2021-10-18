@@ -37,7 +37,7 @@ CONTROLLER_GEN = controller-gen
 CRD_OPTIONS ?= "crd:trivialVersions=true,preserveUnknownFields=false"
 
 controller-gen: ## Download controller-gen locally if necessary.
-	go get sigs.k8s.io/controller-tools/cmd/controller-gen@v0.6.1
+	go install sigs.k8s.io/controller-tools/cmd/controller-gen@v0.6.1
 
 ## The controller-gen tool doesn't generate deep copy and crd files for apis with own go.mod file, i.e. /apis/config/go.mod
 ## The workaround is:
