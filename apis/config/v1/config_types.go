@@ -16,14 +16,12 @@ const (
 
 	// Minimal is an AggregationLevel
 	Minimal AggregationLevel = "minimal"
-
-	// ShowLocalPolicies decides if to propagate local policies
-	ShowLocalPolicies bool = true
 )
 
 // ConfigSpec defines the desired state of Config
 type ConfigSpec struct {
 	AggregationLevel AggregationLevel `json:"aggregationLevel,omitempty"` // full or minimal
+	EnableLocalPolicies bool 		  `json:"enableLocalPolicies,omitempty"` // whether to send local policies or not
 }
 
 // ConfigStatus defines the observed state of Config
