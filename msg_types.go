@@ -1,6 +1,8 @@
 package datatypes
 
 const (
+	// SpecBundle - spec bundle message type.
+	SpecBundle = "SpecBundle"
 	// StatusBundle - status bundle message type.
 	StatusBundle = "StatusBundle"
 	// Config - hub of hubs config message type.
