@@ -27,8 +27,9 @@ type HeartbeatIntervals struct {
 
 // ConfigSpec defines the desired state of Config
 type ConfigSpec struct {
-	AggregationLevel   AggregationLevel   `json:"aggregationLevel,omitempty"` // full or minimal
-	HeartbeatIntervals HeartbeatIntervals `json:"heartbeatIntervals,omitempty"`
+	AggregationLevel    AggregationLevel   `json:"aggregationLevel,omitempty"` // full or minimal
+	HeartbeatIntervals  HeartbeatIntervals `json:"heartbeatIntervals,omitempty"`
+	EnableLocalPolicies bool               `json:"enableLocalPolicies,omitempty"`
 }
 
 // ConfigStatus defines the observed state of Config
