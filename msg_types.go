@@ -27,6 +27,6 @@ const (
 	LocalClustersPerPolicyMsgKey = "LocalClustersPerPolicy"
 	// LocalPolicyComplianceMsgKey - local policy compliance message key.
 	LocalPolicyComplianceMsgKey = "LocalPolicyCompliance"
-	// LocalSpecPerPolicyMsgKey - the local spec per policy message key.
+	// LocalSpecPerPolicyMsgKey - the local spec per policy message key
 	LocalSpecPerPolicyMsgKey = "localSpecPerPolicy"
 )
