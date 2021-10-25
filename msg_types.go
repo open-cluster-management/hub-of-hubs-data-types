@@ -26,9 +26,9 @@ const (
 	// LocalPlacementRulesMsgKey - local placement rules message key.
 	LocalPlacementRulesMsgKey = "LocalPlacementRules"
 	// LocalClustersPerPolicyMsgKey - local clusters per policy message key.
-	LocalClustersPerPolicyMsgKey = "LocalCompletePolicyComplianceMsgKey"
+	LocalClustersPerPolicyMsgKey = "LocalClustersPerPolicy"
 	// LocalCompletePolicyComplianceMsgKey - local policy compliance message key.
-	LocalCompletePolicyComplianceMsgKey = "Local"
+	LocalCompletePolicyComplianceMsgKey = "LocalCompletePolicyComplianceMsgKey"
 	// LocalSpecPerPolicyMsgKey - the local spec per policy message key
 	LocalSpecPerPolicyMsgKey = "localSpecPerPolicy"
 )
