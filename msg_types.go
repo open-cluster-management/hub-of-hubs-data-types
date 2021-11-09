@@ -22,4 +22,13 @@ const (
 	ControlInfoMsgKey = "ControlInfo"
 	// HohHeartbeatMsgKey - HoH heartbeat message key.
 	HohHeartbeatMsgKey = "HohHeartbeat"
+
+	// LocalPlacementRulesMsgKey - local placement rules message key.
+	LocalPlacementRulesMsgKey = "LocalPlacementRules"
+	// LocalClustersPerPolicyMsgKey - local clusters per policy message key.
+	LocalClustersPerPolicyMsgKey = "LocalClustersPerPolicy"
+	// LocalPolicyCompleteComplianceMsgKey - local policy compliance message key.
+	LocalPolicyCompleteComplianceMsgKey = "LocalPolicyCompleteCompliance"
+	// LocalPolicySpecMsgKey - the local policy spec message key.
+	LocalPolicySpecMsgKey = "LocalPolicySpec"
 )
