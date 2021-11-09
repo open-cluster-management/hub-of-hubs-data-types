@@ -9,13 +9,6 @@ type PolicyGenericComplianceStatus struct {
 	UnknownComplianceClusters []string `json:"unknownComplianceClusters"`
 }
 
-// BaseClustersPerPolicyBundle is the base struct for clusters per policy bundle and contains the full state.
-type BaseClustersPerPolicyBundle struct {
-	Objects     []*PolicyGenericComplianceStatus `json:"objects"`
-	LeafHubName string                           `json:"leafHubName"`
-	Generation  uint64                           `json:"generation"`
-}
-
 // PolicyCompleteComplianceStatus struct holds information for (optimized) policy compliance status.
 type PolicyCompleteComplianceStatus struct {
 	PolicyID                  string   `json:"policyId"`
@@ -23,12 +16,19 @@ type PolicyCompleteComplianceStatus struct {
 	UnknownComplianceClusters []string `json:"unknownComplianceClusters"`
 }
 
+// BaseClustersPerPolicyBundle is the base struct for clusters per policy bundle and contains the full state.
+type BaseClustersPerPolicyBundle struct {
+	Objects     []*PolicyGenericComplianceStatus `json:"objects"`
+	LeafHubName string                           `json:"leafHubName"`
+	BundleVersion
+}
+
 // BaseCompleteComplianceStatusBundle is the base struct for complete state compliance status bundle.
 type BaseCompleteComplianceStatusBundle struct {
 	Objects              []*PolicyCompleteComplianceStatus `json:"objects"`
 	LeafHubName          string                            `json:"leafHubName"`
 	BaseBundleGeneration uint64                            `json:"baseBundleGeneration"`
-	Generation           uint64                            `json:"generation"`
+	BundleVersion
 }
 
 // BaseDeltaComplianceStatusBundle is the base struct for delta state compliance status bundle.
@@ -36,5 +36,5 @@ type BaseDeltaComplianceStatusBundle struct {
 	Objects              []*PolicyGenericComplianceStatus `json:"objects"`
 	LeafHubName          string                           `json:"leafHubName"`
 	BaseBundleGeneration uint64                           `json:"baseBundleGeneration"`
-	Generation           uint64                           `json:"generation"`
+	BundleVersion
 }
