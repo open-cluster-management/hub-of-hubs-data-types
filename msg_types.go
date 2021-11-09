@@ -13,7 +13,7 @@ const (
 	// ClustersPerPolicyMsgKey - clusters per policy message key.
 	ClustersPerPolicyMsgKey = "ClustersPerPolicy"
 	// PolicyCompleteComplianceMsgKey - policy complete state compliance message key.
-	PolicyCompleteComplianceMsgKey = "CompletePolicyCompliance"
+	PolicyCompleteComplianceMsgKey = "PolicyCompleteCompliance"
 	// PolicyDeltaComplianceMsgKey - policy delta state compliance message key.
 	PolicyDeltaComplianceMsgKey = "PolicyDeltaCompliance"
 	// MinimalPolicyComplianceMsgKey - minimal policy compliance message key.
