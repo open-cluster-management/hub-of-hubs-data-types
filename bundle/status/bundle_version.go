@@ -1,7 +1,7 @@
 package status
 
 // NewBundleVersion returns a new instance of BundleVersion.
-func NewBundleVersion(incarnation, generation uint64) *BundleVersion {
+func NewBundleVersion(incarnation uint64, generation uint64) *BundleVersion {
 	return &BundleVersion{
 		Incarnation: incarnation,
 		Generation:  generation,
