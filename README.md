@@ -7,6 +7,10 @@
 
 The data-types module of [Hub-of-Hubs](https://github.com/open-cluster-management/hub-of-hubs).
 
+Go to the [Contributing guide](CONTRIBUTING.md) to learn how to get involved.
+
+## Getting Started
+
 ## DeepCopy and CRD generation
 
 1. DeepCopy - run ```make generate```. The file will be generated in the corresponding API folder
