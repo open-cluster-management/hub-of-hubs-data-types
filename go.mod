@@ -6,4 +6,5 @@ require github.com/open-cluster-management/governance-policy-propagator v0.0.0-2
 
 retract (
 	v0.2.0
+	v0.2.1
 )
