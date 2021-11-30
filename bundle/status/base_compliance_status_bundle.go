@@ -25,10 +25,10 @@ type BaseClustersPerPolicyBundle struct {
 
 // BaseCompleteComplianceStatusBundle is the base struct for complete state compliance status bundle.
 type BaseCompleteComplianceStatusBundle struct {
-	Objects              []*PolicyCompleteComplianceStatus `json:"objects"`
-	LeafHubName          string                            `json:"leafHubName"`
-	BaseBundleGeneration uint64                            `json:"baseBundleGeneration"`
-	BundleVersion 	     *BundleVersion                    `json:"bundleVersion"`
+	Objects           []*PolicyCompleteComplianceStatus `json:"objects"`
+	LeafHubName       string                            `json:"leafHubName"`
+	BaseBundleVersion *BundleVersion                    `json:"baseBundleVersion"`
+	BundleVersion     *BundleVersion                    `json:"bundleVersion"`
 }
 
 // BaseDeltaComplianceStatusBundle is the base struct for delta state compliance status bundle.
