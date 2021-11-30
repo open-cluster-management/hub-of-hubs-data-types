@@ -1,5 +1,7 @@
 package status
 
+import "fmt"
+
 // NewBundleVersion returns a new instance of BundleVersion.
 func NewBundleVersion(incarnation uint64, generation uint64) *BundleVersion {
 	return &BundleVersion{
@@ -19,19 +21,24 @@ type BundleVersion struct {
 // NewerThan returns whether the caller's version is newer than that received as argument.
 //
 // If other = nil the result is true.
-func (bv *BundleVersion) NewerThan(other *BundleVersion) bool {
+func (version *BundleVersion) NewerThan(other *BundleVersion) bool {
 	if other == nil {
 		return true
 	}
 
-	if bv.Incarnation == other.Incarnation {
-		return bv.Generation > other.Generation
+	if version.Incarnation == other.Incarnation {
+		return version.Generation > other.Generation
 	}
 
-	return bv.Incarnation > other.Incarnation
+	return version.Incarnation > other.Incarnation
 }
 
 // Equals returns whether the caller's version is equal to that received as argument.
-func (bv *BundleVersion) Equals(other *BundleVersion) bool {
-	return bv.Incarnation == other.Incarnation && bv.Generation == other.Generation
+func (version *BundleVersion) Equals(other *BundleVersion) bool {
+	return version.Incarnation == other.Incarnation && version.Generation == other.Generation
+}
+
+// String returns string representation of the bundle version.
+func (version *BundleVersion) String() string {
+	return fmt.Sprintf("%d.%d", version.Incarnation, version.Generation)
 }
