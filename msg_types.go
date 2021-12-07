@@ -12,6 +12,8 @@ const (
 	ManagedClustersMsgKey = "ManagedClusters"
 	// ClustersPerPolicyMsgKey - clusters per policy message key.
 	ClustersPerPolicyMsgKey = "ClustersPerPolicy"
+	// SubscriptionStatusMsgKey - subscription status message key.
+	SubscriptionStatusMsgKey = "SubscriptionStatus"
 	// PolicyCompleteComplianceMsgKey - policy complete state compliance message key.
 	PolicyCompleteComplianceMsgKey = "PolicyCompleteCompliance"
 	// PolicyDeltaComplianceMsgKey - policy delta state compliance message key.
