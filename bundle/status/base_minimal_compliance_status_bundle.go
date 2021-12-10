@@ -12,7 +12,7 @@ type MinimalPolicyComplianceStatus struct {
 
 // BaseMinimalComplianceStatusBundle is the base struct for minimal compliance status bundle.
 type BaseMinimalComplianceStatusBundle struct {
-	Objects     []*MinimalPolicyComplianceStatus `json:"objects"`
-	LeafHubName string                           `json:"leafHubName"`
-	Generation  uint64                           `json:"generation"`
+	Objects       []*MinimalPolicyComplianceStatus `json:"objects"`
+	LeafHubName   string                           `json:"leafHubName"`
+	BundleVersion *BundleVersion                   `json:"bundleVersion"`
 }

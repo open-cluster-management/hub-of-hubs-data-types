@@ -3,9 +3,14 @@
 # hub-of-hubs-data-types
 
 [![Go Report Card](https://goreportcard.com/badge/github.com/open-cluster-management/hub-of-hubs-data-types)](https://goreportcard.com/report/github.com/open-cluster-management/hub-of-hubs-data-types)
+[![Go Reference](https://pkg.go.dev/badge/github.com/open-cluster-management/hub-of-hubs-data-types.svg)](https://pkg.go.dev/github.com/open-cluster-management/hub-of-hubs-data-types)
 [![License](https://img.shields.io/github/license/open-cluster-management/hub-of-hubs-data-types)](/LICENSE)
 
 The data-types module of [Hub-of-Hubs](https://github.com/open-cluster-management/hub-of-hubs).
+
+Go to the [Contributing guide](CONTRIBUTING.md) to learn how to get involved.
+
+## Getting Started
 
 ## DeepCopy and CRD generation
 
