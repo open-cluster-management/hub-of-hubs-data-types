@@ -20,8 +20,8 @@ const (
 	MinimalPolicyComplianceMsgKey = "MinimalPolicyCompliance"
 	// ControlInfoMsgKey - control info message key.
 	ControlInfoMsgKey = "ControlInfo"
-	// HohHeartbeatMsgKey - HoH heartbeat message key.
-	HohHeartbeatMsgKey = "HohHeartbeat"
+	// HeartbeatMsgKey - heartbeat message key.
+	HeartbeatMsgKey = "Heartbeat"
 
 	// LocalPlacementRulesMsgKey - local placement rules message key.
 	LocalPlacementRulesMsgKey = "LocalPlacementRules"
