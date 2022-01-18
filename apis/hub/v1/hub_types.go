@@ -9,7 +9,7 @@ import (
 
 // HubSpec defines the desired state of Hub.
 type HubSpec struct {
-	UUID string `json:"uuid,omitempty"`
+	UUID string `json:"uuid"`
 }
 
 // HubStatus defines the observed state of Hub.
