@@ -14,11 +14,13 @@ type HubSpec struct {
 
 // HubStatus defines the observed state of Hub.
 type HubStatus struct {
-	ActiveUUID                string `json:"active-uuid,omitempty"`
-	TransportBootstrapServers string `json:"transport-bootstrap-servers,omitempty"`
-	TransportCertificate      string `json:"transport-certificate,omitempty"`
-	TransportSpecTopic        string `json:"transport-spec-topic,omitempty"`
-	WriterIncarnation         string `json:"writer-incarnation,omitempty"`
+	// Conditions represent the latest available observations of an object's state
+	Conditions                []metav1.Condition `json:"conditions,omitempty"`
+	ActiveUUID                string             `json:"active-uuid,omitempty"`
+	TransportBootstrapServers string             `json:"transport-bootstrap-servers,omitempty"`
+	TransportCertificate      string             `json:"transport-certificate,omitempty"`
+	TransportSpecTopic        string             `json:"transport-spec-topic,omitempty"`
+	WriterIncarnation         string             `json:"writer-incarnation,omitempty"`
 }
 
 //+kubebuilder:object:root=true
