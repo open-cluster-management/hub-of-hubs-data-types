@@ -1,7 +1,7 @@
 package spec
 
-// ManagedClustersLabelsBundle struct bundles ManagedClusterLabels objects.
-type ManagedClustersLabelsBundle struct {
-	Objects     []*ManagedClusterLabels `json:"objects"`
-	LeafHubName string                  `json:"leafHubName"`
+// ManagedClusterLabelsSpecBundle struct bundles ManagedClusterLabelsSpec objects.
+type ManagedClusterLabelsSpecBundle struct {
+	Objects     []*ManagedClusterLabelsSpec `json:"objects"`
+	LeafHubName string                      `json:"leafHubName"`
 }
