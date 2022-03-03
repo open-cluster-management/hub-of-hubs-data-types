@@ -12,16 +12,12 @@ const (
 	ManagedClustersMsgKey = "ManagedClusters"
 	// ClustersPerPolicyMsgKey - clusters per policy message key.
 	ClustersPerPolicyMsgKey = "ClustersPerPolicy"
-	// SubscriptionStatusMsgKey - subscription status message key.
-	SubscriptionStatusMsgKey = "SubscriptionStatus"
 	// PolicyCompleteComplianceMsgKey - policy complete state compliance message key.
 	PolicyCompleteComplianceMsgKey = "PolicyCompleteCompliance"
 	// PolicyDeltaComplianceMsgKey - policy delta state compliance message key.
 	PolicyDeltaComplianceMsgKey = "PolicyDeltaCompliance"
 	// MinimalPolicyComplianceMsgKey - minimal policy compliance message key.
 	MinimalPolicyComplianceMsgKey = "MinimalPolicyCompliance"
-	// ControlInfoMsgKey - control info message key.
-	ControlInfoMsgKey = "ControlInfo"
 	// LocalPlacementRulesMsgKey - local placement rules message key.
 	LocalPlacementRulesMsgKey = "LocalPlacementRules"
 	// LocalClustersPerPolicyMsgKey - local clusters per policy message key.
@@ -30,4 +26,8 @@ const (
 	LocalPolicyCompleteComplianceMsgKey = "LocalPolicyCompleteCompliance"
 	// LocalPolicySpecMsgKey - the local policy spec message key.
 	LocalPolicySpecMsgKey = "LocalPolicySpec"
+	// SubscriptionStatusMsgKey - subscription status message key.
+	SubscriptionStatusMsgKey = "SubscriptionStatus"
+	// ControlInfoMsgKey - control info message key.
+	ControlInfoMsgKey = "ControlInfo"
 )
