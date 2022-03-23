@@ -18,16 +18,16 @@ const (
 	PolicyDeltaComplianceMsgKey = "PolicyDeltaCompliance"
 	// MinimalPolicyComplianceMsgKey - minimal policy compliance message key.
 	MinimalPolicyComplianceMsgKey = "MinimalPolicyCompliance"
-	// LocalPlacementRulesMsgKey - local placement rules message key.
-	LocalPlacementRulesMsgKey = "LocalPlacementRules"
+	// SubscriptionStatusMsgKey - subscription status message key.
+	SubscriptionStatusMsgKey = "SubscriptionStatus"
+	// LocalPolicySpecMsgKey - the local policy spec message key.
+	LocalPolicySpecMsgKey = "LocalPolicySpec"
 	// LocalClustersPerPolicyMsgKey - local clusters per policy message key.
 	LocalClustersPerPolicyMsgKey = "LocalClustersPerPolicy"
 	// LocalPolicyCompleteComplianceMsgKey - local policy compliance message key.
 	LocalPolicyCompleteComplianceMsgKey = "LocalPolicyCompleteCompliance"
-	// LocalPolicySpecMsgKey - the local policy spec message key.
-	LocalPolicySpecMsgKey = "LocalPolicySpec"
-	// SubscriptionStatusMsgKey - subscription status message key.
-	SubscriptionStatusMsgKey = "SubscriptionStatus"
+	// LocalPlacementRulesMsgKey - local placement rules message key.
+	LocalPlacementRulesMsgKey = "LocalPlacementRules"
 	// ControlInfoMsgKey - control info message key.
 	ControlInfoMsgKey = "ControlInfo"
 )
