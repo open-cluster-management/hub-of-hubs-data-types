@@ -16,6 +16,8 @@ const (
 	PolicyCompleteComplianceMsgKey = "PolicyCompleteCompliance"
 	// PolicyDeltaComplianceMsgKey - policy delta state compliance message key.
 	PolicyDeltaComplianceMsgKey = "PolicyDeltaCompliance"
+	// PolicyPlacementMsgKey - policy placement message key.
+	PolicyPlacementMsgKey = "PolicyPlacement"
 	// MinimalPolicyComplianceMsgKey - minimal policy compliance message key.
 	MinimalPolicyComplianceMsgKey = "MinimalPolicyCompliance"
 	// SubscriptionStatusMsgKey - subscription status message key.
