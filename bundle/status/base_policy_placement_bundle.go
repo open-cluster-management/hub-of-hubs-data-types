@@ -7,7 +7,7 @@ type PolicyPlacementStatus struct {
 	PlacementBinding string `json:"placementBinding"`
 }
 
-// BasePolicyPlacementStatusBundle the base struct for minimal compliance status bundle.
+// BasePolicyPlacementStatusBundle the base struct for policy placement status bundle.
 type BasePolicyPlacementStatusBundle struct {
 	Objects       []*PolicyPlacementStatus `json:"objects"`
 	LeafHubName   string                   `json:"leafHubName"`
