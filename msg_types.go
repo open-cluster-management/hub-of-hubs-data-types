@@ -12,6 +12,10 @@ const (
 	ManagedClustersMsgKey = "ManagedClusters"
 	// ManagedClustersMetadataMsgKey - managed clusters metadata message key.
 	ManagedClustersMetadataMsgKey = "ManagedClustersMetadata"
+	// ManagedClusterSetsMsgKey - managed cluster sets message key.
+	ManagedClusterSetsMsgKey = "ManagedClusterSets"
+	// ManagedClusterSetBindingsMsgKey - managed cluster set bindings message key.
+	ManagedClusterSetBindingsMsgKey = "ManagedClusterSetBindings"
 	// ClustersPerPolicyMsgKey - clusters per policy message key.
 	ClustersPerPolicyMsgKey = "ClustersPerPolicy"
 	// PolicyCompleteComplianceMsgKey - policy complete state compliance message key.
@@ -22,6 +26,8 @@ const (
 	MinimalPolicyComplianceMsgKey = "MinimalPolicyCompliance"
 	// ControlInfoMsgKey - control info message key.
 	ControlInfoMsgKey = "ControlInfo"
+	// PlacementsMsgKey - placements message key.
+	PlacementsMsgKey = "Placements"
 	// PlacementRulesMsgKey - placement rules message key.
 	PlacementRulesMsgKey = "PlacementRules"
 	// LocalPlacementRulesMsgKey - local placement rules message key.
