@@ -1,6 +1,6 @@
 package status
 
-// PolicyGenericComplianceStatus struct holds information for policy compliance status and may be used either for
+// PolicyGenericComplianceStatus holds information for policy compliance status and may be used either for
 // complete or delta state bundles.
 type PolicyGenericComplianceStatus struct {
 	PolicyID                  string   `json:"policyId"`
@@ -9,21 +9,21 @@ type PolicyGenericComplianceStatus struct {
 	UnknownComplianceClusters []string `json:"unknownComplianceClusters"`
 }
 
-// PolicyCompleteComplianceStatus struct holds information for (optimized) policy compliance status.
+// PolicyCompleteComplianceStatus holds information for (optimized) policy compliance status.
 type PolicyCompleteComplianceStatus struct {
 	PolicyID                  string   `json:"policyId"`
 	NonCompliantClusters      []string `json:"nonCompliantClusters"`
 	UnknownComplianceClusters []string `json:"unknownComplianceClusters"`
 }
 
-// BaseClustersPerPolicyBundle is the base struct for clusters per policy bundle and contains the full state.
+// BaseClustersPerPolicyBundle the base struct for clusters per policy bundle and contains the full state.
 type BaseClustersPerPolicyBundle struct {
 	Objects       []*PolicyGenericComplianceStatus `json:"objects"`
 	LeafHubName   string                           `json:"leafHubName"`
 	BundleVersion *BundleVersion                   `json:"bundleVersion"`
 }
 
-// BaseCompleteComplianceStatusBundle is the base struct for complete state compliance status bundle.
+// BaseCompleteComplianceStatusBundle the base struct for complete state compliance status bundle.
 type BaseCompleteComplianceStatusBundle struct {
 	Objects           []*PolicyCompleteComplianceStatus `json:"objects"`
 	LeafHubName       string                            `json:"leafHubName"`
@@ -31,7 +31,7 @@ type BaseCompleteComplianceStatusBundle struct {
 	BundleVersion     *BundleVersion                    `json:"bundleVersion"`
 }
 
-// BaseDeltaComplianceStatusBundle is the base struct for delta state compliance status bundle.
+// BaseDeltaComplianceStatusBundle the base struct for delta state compliance status bundle.
 type BaseDeltaComplianceStatusBundle struct {
 	Objects           []*PolicyGenericComplianceStatus `json:"objects"`
 	LeafHubName       string                           `json:"leafHubName"`
