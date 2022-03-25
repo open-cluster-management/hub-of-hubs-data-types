@@ -42,4 +42,10 @@ const (
 	PoliciesMsgKey = "Policies"
 	// LocalPolicySpecMsgKey - the local policy spec message key.
 	LocalPolicySpecMsgKey = "LocalPolicySpec"
+	// ChannelsMsgKey - the channels spec message key.
+	ChannelsMsgKey = "Channels"
+	// ApplicationsMsgKey - the applications spec message key.
+	ApplicationsMsgKey = "Applications"
+	// SubscriptionsMsgKey - the subscriptions spec message key.
+	SubscriptionsMsgKey = "Subscriptions"
 )
