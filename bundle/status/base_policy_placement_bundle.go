@@ -4,8 +4,9 @@ import policiesv1 "github.com/open-cluster-management/governance-policy-propagat
 
 // PolicyPlacementStatus holds information for policy placement status.
 type PolicyPlacementStatus struct {
-	PolicyID  string                  `json:"policyId"`
-	Placement []*policiesv1.Placement `json:"placement"`
+	PolicyID        string                  `json:"policyId"`
+	Placement       []*policiesv1.Placement `json:"placement"`
+	ResourceVersion string                  `json:"resourceVersion"`
 }
 
 // BasePolicyPlacementStatusBundle the base struct for policy placement status bundle.
