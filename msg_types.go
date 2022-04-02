@@ -22,6 +22,8 @@ const (
 	PolicyCompleteComplianceMsgKey = "PolicyCompleteCompliance"
 	// PolicyDeltaComplianceMsgKey - policy delta state compliance message key.
 	PolicyDeltaComplianceMsgKey = "PolicyDeltaCompliance"
+	// PolicyPlacementMsgKey - policy placement message key.
+	PolicyPlacementMsgKey = "PolicyPlacement"
 	// MinimalPolicyComplianceMsgKey - minimal policy compliance message key.
 	MinimalPolicyComplianceMsgKey = "MinimalPolicyCompliance"
 	// ControlInfoMsgKey - control info message key.
@@ -34,6 +36,10 @@ const (
 	LocalPlacementRulesMsgKey = "LocalPlacementRules"
 	// PlacementBindingsMsgKey - placement bindings message key.
 	PlacementBindingsMsgKey = "PlacementBindings"
+	// SubscriptionStatusMsgKey - subscription status message key.
+	SubscriptionStatusMsgKey = "SubscriptionStatus"
+	// LocalPolicySpecMsgKey - the local policy spec message key.
+	LocalPolicySpecMsgKey = "LocalPolicySpec"
 	// LocalClustersPerPolicyMsgKey - local clusters per policy message key.
 	LocalClustersPerPolicyMsgKey = "LocalClustersPerPolicy"
 	// LocalPolicyCompleteComplianceMsgKey - local policy compliance message key.
@@ -48,4 +54,8 @@ const (
 	ApplicationsMsgKey = "Applications"
 	// SubscriptionsMsgKey - the subscriptions spec message key.
 	SubscriptionsMsgKey = "Subscriptions"
+	// LocalPlacementRulesMsgKey - local placement rules message key.
+	LocalPlacementRulesMsgKey = "LocalPlacementRules"
+	// ControlInfoMsgKey - control info message key.
+	ControlInfoMsgKey = "ControlInfo"
 )
