@@ -16,6 +16,7 @@ const (
 	ManagedClusterSetsMsgKey = "ManagedClusterSets"
 	// ManagedClusterSetBindingsMsgKey - managed cluster set bindings message key.
 	ManagedClusterSetBindingsMsgKey = "ManagedClusterSetBindings"
+
 	// ClustersPerPolicyMsgKey - clusters per policy message key.
 	ClustersPerPolicyMsgKey = "ClustersPerPolicy"
 	// PolicyCompleteComplianceMsgKey - policy complete state compliance message key.
@@ -26,36 +27,33 @@ const (
 	PolicyPlacementMsgKey = "PolicyPlacement"
 	// MinimalPolicyComplianceMsgKey - minimal policy compliance message key.
 	MinimalPolicyComplianceMsgKey = "MinimalPolicyCompliance"
-	// ControlInfoMsgKey - control info message key.
-	ControlInfoMsgKey = "ControlInfo"
+	// PoliciesMsgKey - the policy spec message key.
+	PoliciesMsgKey = "Policies"
 	// PlacementsMsgKey - placements message key.
 	PlacementsMsgKey = "Placements"
 	// PlacementRulesMsgKey - placement rules message key.
 	PlacementRulesMsgKey = "PlacementRules"
-	// LocalPlacementRulesMsgKey - local placement rules message key.
-	LocalPlacementRulesMsgKey = "LocalPlacementRules"
 	// PlacementBindingsMsgKey - placement bindings message key.
 	PlacementBindingsMsgKey = "PlacementBindings"
-	// SubscriptionStatusMsgKey - subscription status message key.
-	SubscriptionStatusMsgKey = "SubscriptionStatus"
+
 	// LocalPolicySpecMsgKey - the local policy spec message key.
 	LocalPolicySpecMsgKey = "LocalPolicySpec"
+	// LocalPlacementRulesMsgKey - local placement rules message key.
+	LocalPlacementRulesMsgKey = "LocalPlacementRules"
 	// LocalClustersPerPolicyMsgKey - local clusters per policy message key.
 	LocalClustersPerPolicyMsgKey = "LocalClustersPerPolicy"
 	// LocalPolicyCompleteComplianceMsgKey - local policy compliance message key.
 	LocalPolicyCompleteComplianceMsgKey = "LocalPolicyCompleteCompliance"
-	// PoliciesMsgKey - the policy spec message key.
-	PoliciesMsgKey = "Policies"
-	// LocalPolicySpecMsgKey - the local policy spec message key.
-	LocalPolicySpecMsgKey = "LocalPolicySpec"
+
 	// ChannelsMsgKey - the channels spec message key.
 	ChannelsMsgKey = "Channels"
 	// ApplicationsMsgKey - the applications spec message key.
 	ApplicationsMsgKey = "Applications"
 	// SubscriptionsMsgKey - the subscriptions spec message key.
 	SubscriptionsMsgKey = "Subscriptions"
-	// LocalPlacementRulesMsgKey - local placement rules message key.
-	LocalPlacementRulesMsgKey = "LocalPlacementRules"
+	// SubscriptionStatusMsgKey - subscription status message key.
+	SubscriptionStatusMsgKey = "SubscriptionStatus"
+
 	// ControlInfoMsgKey - control info message key.
 	ControlInfoMsgKey = "ControlInfo"
 )
