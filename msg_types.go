@@ -8,8 +8,8 @@ const (
 
 	// ManagedClustersMsgKey - managed clusters message key.
 	ManagedClustersMsgKey = "ManagedClusters"
-	// ManagedClustersMetadataMsgKey - managed clusters metadata message key.
-	ManagedClustersMetadataMsgKey = "ManagedClustersMetadata"
+	// ManagedClustersLabelsMsgKey - managed cluster labels message key.
+	ManagedClustersLabelsMsgKey = "ManagedClustersLabels"
 
 	// ClustersPerPolicyMsgKey - clusters per policy message key.
 	ClustersPerPolicyMsgKey = "ClustersPerPolicy"
