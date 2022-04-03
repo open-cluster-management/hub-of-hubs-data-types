@@ -38,19 +38,13 @@ const (
 
 	// LocalPolicySpecMsgKey - the local policy spec message key.
 	LocalPolicySpecMsgKey = "LocalPolicySpec"
-	// LocalPlacementRulesMsgKey - local placement rules message key.
-	LocalPlacementRulesMsgKey = "LocalPlacementRules"
 	// LocalClustersPerPolicyMsgKey - local clusters per policy message key.
 	LocalClustersPerPolicyMsgKey = "LocalClustersPerPolicy"
 	// LocalPolicyCompleteComplianceMsgKey - local policy compliance message key.
 	LocalPolicyCompleteComplianceMsgKey = "LocalPolicyCompleteCompliance"
+	// LocalPlacementRulesMsgKey - local placement rules message key.
+	LocalPlacementRulesMsgKey = "LocalPlacementRules"
 
-	// ChannelsMsgKey - the channels spec message key.
-	ChannelsMsgKey = "Channels"
-	// ApplicationsMsgKey - the applications spec message key.
-	ApplicationsMsgKey = "Applications"
-	// SubscriptionsMsgKey - the subscriptions spec message key.
-	SubscriptionsMsgKey = "Subscriptions"
 	// SubscriptionStatusMsgKey - subscription status message key.
 	SubscriptionStatusMsgKey = "SubscriptionStatus"
 
