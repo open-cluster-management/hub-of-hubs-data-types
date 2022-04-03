@@ -5,8 +5,6 @@ const (
 	SpecBundle = "SpecBundle"
 	// StatusBundle - status bundle message type.
 	StatusBundle = "StatusBundle"
-	// Config - hub of hubs config message type.
-	Config = "Config"
 
 	// ManagedClustersMsgKey - managed clusters message key.
 	ManagedClustersMsgKey = "ManagedClusters"
