@@ -5,11 +5,12 @@ const (
 	SpecBundle = "SpecBundle"
 	// StatusBundle - status bundle message type.
 	StatusBundle = "StatusBundle"
-	// Config - hub of hubs config message type.
-	Config = "Config"
 
 	// ManagedClustersMsgKey - managed clusters message key.
 	ManagedClustersMsgKey = "ManagedClusters"
+	// ManagedClustersLabelsMsgKey - managed cluster labels message key.
+	ManagedClustersLabelsMsgKey = "ManagedClustersLabels"
+
 	// ClustersPerPolicyMsgKey - clusters per policy message key.
 	ClustersPerPolicyMsgKey = "ClustersPerPolicy"
 	// PolicyCompleteComplianceMsgKey - policy complete state compliance message key.
@@ -20,8 +21,6 @@ const (
 	PolicyPlacementMsgKey = "PolicyPlacement"
 	// MinimalPolicyComplianceMsgKey - minimal policy compliance message key.
 	MinimalPolicyComplianceMsgKey = "MinimalPolicyCompliance"
-	// SubscriptionStatusMsgKey - subscription status message key.
-	SubscriptionStatusMsgKey = "SubscriptionStatus"
 	// LocalPolicySpecMsgKey - the local policy spec message key.
 	LocalPolicySpecMsgKey = "LocalPolicySpec"
 	// LocalClustersPerPolicyMsgKey - local clusters per policy message key.
@@ -30,6 +29,10 @@ const (
 	LocalPolicyCompleteComplianceMsgKey = "LocalPolicyCompleteCompliance"
 	// LocalPlacementRulesMsgKey - local placement rules message key.
 	LocalPlacementRulesMsgKey = "LocalPlacementRules"
+
+	// SubscriptionStatusMsgKey - subscription status message key.
+	SubscriptionStatusMsgKey = "SubscriptionStatus"
+
 	// ControlInfoMsgKey - control info message key.
 	ControlInfoMsgKey = "ControlInfo"
 )
