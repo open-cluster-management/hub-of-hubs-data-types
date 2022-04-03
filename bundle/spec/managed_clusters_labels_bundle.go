@@ -2,7 +2,7 @@ package spec
 
 import "time"
 
-// ManagedClusterLabelsSpec struct holds information for managed cluster metadata.
+// ManagedClusterLabelsSpec struct holds information for managed cluster labels.
 type ManagedClusterLabelsSpec struct {
 	ClusterName      string            `json:"clusterName"`
 	Labels           map[string]string `json:"labels"`
