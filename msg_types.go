@@ -32,6 +32,8 @@ const (
 
 	// SubscriptionStatusMsgKey - subscription status message key.
 	SubscriptionStatusMsgKey = "SubscriptionStatus"
+	// SubscriptionReportMsgKey - subscription report message key.
+	SubscriptionReportMsgKey = "SubscriptionReport"
 
 	// ControlInfoMsgKey - control info message key.
 	ControlInfoMsgKey = "ControlInfo"
