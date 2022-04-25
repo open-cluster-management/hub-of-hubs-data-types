@@ -17,10 +17,9 @@ const (
 	PolicyCompleteComplianceMsgKey = "PolicyCompleteCompliance"
 	// PolicyDeltaComplianceMsgKey - policy delta state compliance message key.
 	PolicyDeltaComplianceMsgKey = "PolicyDeltaCompliance"
-	// PolicyPlacementMsgKey - policy placement message key.
-	PolicyPlacementMsgKey = "PolicyPlacement"
 	// MinimalPolicyComplianceMsgKey - minimal policy compliance message key.
 	MinimalPolicyComplianceMsgKey = "MinimalPolicyCompliance"
+	
 	// LocalPolicySpecMsgKey - the local policy spec message key.
 	LocalPolicySpecMsgKey = "LocalPolicySpec"
 	// LocalClustersPerPolicyMsgKey - local clusters per policy message key.
