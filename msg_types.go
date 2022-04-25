@@ -30,10 +30,17 @@ const (
 	// LocalPlacementRulesMsgKey - local placement rules message key.
 	LocalPlacementRulesMsgKey = "LocalPlacementRules"
 
-	// SubscriptionStatusMsgKey - subscription status message key.
+	// SubscriptionStatusMsgKey - subscription-status message key.
 	SubscriptionStatusMsgKey = "SubscriptionStatus"
-	// SubscriptionReportMsgKey - subscription report message key.
+	// SubscriptionReportMsgKey - subscription-report message key.
 	SubscriptionReportMsgKey = "SubscriptionReport"
+
+	// PlacementRuleMsgKey - placement-rule message key.
+	PlacementRuleMsgKey = "PlacementRule"
+	// PlacementMsgKey - placement message key.
+	PlacementMsgKey = "Placement"
+	// PlacementDecisionMsgKey - placement-decision message key.
+	PlacementDecisionMsgKey = "PlacementDecision"
 
 	// ControlInfoMsgKey - control info message key.
 	ControlInfoMsgKey = "ControlInfo"
